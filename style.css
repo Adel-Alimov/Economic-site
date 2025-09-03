@@ -1,0 +1,260 @@
+/* Reset и базовые стили */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Blinker", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #000000;
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+/* Шапка */
+.page_header {
+    min-height: 800px;
+    width: 100%;
+    position: relative;
+}
+
+.page_header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Основное содержимое */
+.page_main, .page_brands {
+    position: relative;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Заголовки */
+.obj_header {
+    font-size: 4.5rem;
+    margin-top: 120px;
+    margin-left: 50px;
+    line-height: 1;
+    font-weight: 900;
+}
+
+.obj_sec_header {
+    font-weight: 900;
+    line-height: 0.8;
+    font-size: 2rem;
+    margin: 0;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.country_main h3, .corporations {
+    font-size: 3rem;
+    margin: 50px 0 30px 50px;
+    color: #403F3F;
+    font-weight: 900;
+}
+
+/* Список стран */
+.list_country {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 50px auto;
+    padding: 0 20px;
+    max-width: 1500px;
+    list-style: none;
+}
+
+.country {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+}
+
+.country:hover {
+    background-color: khaki;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.a_USA {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.country img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.S_USA, .Y_USA {
+    font-weight: 600;
+    color: #acacac;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.USA {
+    font-weight: 600;
+    color: #000000;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.ps {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.ps img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Блок с текстом */
+.head_sank {
+    font-family: "Blinker", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 1.5rem;
+    max-width: 1400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-bottom: 2px solid #000000;
+    border-top: 2px solid #000000;
+}
+
+/* Литература */
+.literature {
+    margin: 0 auto 50px;
+    padding: 0 20px;
+    max-width: 1400px;
+}
+
+.list_literature {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.list_literature a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.list_literature a:hover {
+    color: #ff0000;
+}
+
+.list_literature p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Авторы */
+.authors {
+    margin: 50px auto;
+    text-align: center;
+    max-width: 100%;
+}
+
+.authors a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.625rem;
+    transition: color 0.3s ease;
+}
+
+.authors a:hover {
+    color: #ff0000;
+}
+
+/* Iframe */
+iframe {
+    border: none;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Адаптивность */
+@media (max-width: 1200px) {
+    .obj_header {
+        font-size: 3.5rem;
+    }
+    
+    .country_main h3, .corporations {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .obj_header {
+        font-size: 2.5rem;
+        margin-left: 20px;
+        margin-top: 80px;
+    }
+    
+    .obj_sec_header {
+        font-size: 1.5rem;
+        margin-left: 20px;
+    }
+    
+    .country_main h3, .corporations {
+        font-size: 2rem;
+        margin-left: 20px;
+    }
+    
+    .head_sank {
+        font-size: 1.2rem;
+        padding: 15px;
+    }
+    
+    .list_literature p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .obj_header {
+        font-size: 2rem;
+    }
+    
+    .country {
+        max-width: 100%;
+    }
+    
+    .head_sank {
+        font-size: 1rem;
+    }
+}

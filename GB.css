@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    height: 100%;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 43px;
+    color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+.page_header{
+    position: relative;
+    min-height: 800px;
+    width: 1500px;
+    background-image: url(images/GB_back.png);
+}
+
+.page_header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5) 50%, white 100%);
+}
+
+.list_header{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    list-style: none;
+}
+
+.obj_header{
+    font-size: 80px;
+    margin-top: 120px;
+    margin-left: 50px;
+    line-height: 1;
+    font-family: "Blinker", serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.obj_sec_header{
+    font-family: "Blinker", serif;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 0.8;
+    font-size: 32px;
+    margin: 0;
+    text-align: left;
+    margin-left: 50px;
+    max-width: 600px;
+    line-height: 1.25;
+}
+
+.page_main{
+    position: relative;
+    min-height: 800px;
+    width: 1500px;  
+}
+
+.list_sank{
+    transform: translate(-35px, 150px);
+    list-style: none;
+   
+}
+
+.sp_sank{
+    padding-top: 500px;
+    background-color: #8FD48F;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); 
+    padding: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    color: #000000;
+    font-family: "Blinker", serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 1000px;
+    text-align: left;
+    left: -50px;
+}
+
+.text_sp_sank{
+    margin-left: 50px;
+}
+
+.sank{
+    transform: translate(150px, 50px);
+    list-style: none;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.name_sank{
+    background-color: #8FD48F;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); 
+    padding: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    color: #000000;
+    font-family: "Blinker", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    font-size: 30px;
+    left: 0px;
+    width: 530px;
+    height: 240px;
+}
+
+.name_sank_1{
+    margin-left: 40px;
+    background-color: #8FD48F;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); 
+    padding: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    color: #000000;
+    font-family: "Blinker", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    font-size: 30px;
+    left: 0px;
+    width: 530px;
+    height: 240px;
+     
+}
+
+.name_sank_2{
+    margin-left: 40px;
+    background-color: #8FD48F;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); 
+    padding: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    color: #000000;
+    font-family: "Blinker", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    font-size: 30px;
+    left: 0px;
+    width: 530px;
+    height: 240px;
+     
+}
+
+.name_sank_3{
+    margin-left: 40px;
+    background-color: #8FD48F;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); 
+    padding: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    color: #000000;
+    font-family: "Blinker", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    font-size: 30px;
+    left: 0px;
+    width: 530px;
+    height: 240px;
+     
+}
+
+.name_sank_4{
+    margin-left: 40px;
+    background-color: #8FD48F;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); 
+    padding: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    color: #000000;
+    font-family: "Blinker", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    font-size: 30px;
+    left: 0px;
+    width: 530px;
+    height: 240px;
+      
+}
+
+.name_sank_5{
+    margin-left: 40px;
+    background-color: #8FD48F;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); 
+    padding: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    color: #000000;
+    font-family: "Blinker", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    font-size: 30px;
+    left: 0px;
+    width: 530px;
+    height: 240px;
+     
+}
+
+.name_sank_6{
+    margin-left: 40px;
+    background-color: #8FD48F;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); 
+    padding: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    color: #000000;
+    font-family: "Blinker", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    font-size: 30px;
+    left: 0px;
+    width: 530px;
+    height: 240px;
+    
+}
+
+.name_sank_7{
+    margin-left: 40px;
+    background-color: #8FD48F;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); 
+    padding: 20px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    color: #000000;
+    font-family: "Blinker", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: left;
+    font-size: 30px;
+    left: 0px;
+    width: 530px;
+    height: 240px;
+      
+}
+
+.Rus_loss{
+    position: relative;
+    min-height: 800px;
+    width: 1500px;  
+    color: #000000;
+}
+
+.Rus_sank{
+    margin-top: 400px;
+    margin-left: 120px;
+    font-family: "Blinker", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.fin_loss{
+    margin-left: 120px;
+    margin-top: 50px;
+    max-width: 1300px;
+    background-image: url(images/back_dollar.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.sp_fin{
+    text-indent: 40px;
+    margin-bottom: 30px;
+}
+
+.text_fin{
+    margin-top: 20px;
+}
+
+.Rus_sank1{
+    margin-top: 100px;
+    margin-left: 120px;
+    font-family: "Blinker", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.fin_loss1{
+    margin-left: 120px;
+    margin-top: 50px;
+    max-width: 1300px;
+    background-image: url(images/bank_card.png);
+    background-repeat: no-repeat;
+    background-position: left;  
+}
+
+.fin_loss2{
+    margin-left: 120px;
+    margin-top: 50px;
+    max-width: 1300px;
+    background-image: url(images/big_safe.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.fin_loss3{
+    margin-left: 120px;
+    margin-top: 50px;
+    max-width: 1300px;
+    background-image: url(images/big_dollar.png);
+    background-repeat: no-repeat;
+    background-position: left; 
+}
+
+.fin_loss4{
+    margin-left: 120px;
+    margin-top: 50px;
+    max-width: 1300px;
+    background-image: url(images/hammer.png);
+    background-repeat: no-repeat;
+    background-position: right;  
+}
+
+.a_Rus{
+    display: flex;
+    margin-top: 100px;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.Rus_ind{
+    display: flex;
+    width: 800px;
+    background-color: #8FD48F;
+    border-radius: 50px;
+    text-decoration: none;
+    justify-content: center;
+    text-align: center;
+}
+
+.text_Rus{
+    display: flex;
+    color: #000000;
+    padding: 30px;
+    font-family: "Blinker", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    
+}
+
+.image_diag{
+    text-align: center;
+}

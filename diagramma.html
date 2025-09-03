@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Диаграмма</title>
+    <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-core.min.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.1/js/anychart-pie.min.js"></script>
+    <style type="text/css">
+        html, body, #container{
+            width: 100%; height: 100%; margin: 0; padding: 0; 
+        }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        anychart.onDocumentReady(function () { 
+        var data = anychart.data.set([
+            ["США", 7.384],
+            ["Канада", 3.639],
+            ["Швейцария", 3.266],
+            ["Европа", 2.482],
+            ["Юж. Корея", 2.423],
+            ["Великобритания", 2.078],
+            ["Австралия", 1.598],
+            ["Япония", 1.441]
+        ]);
+        var palette = anychart.palettes.distinctColors();
+        palette.items([
+          { color: "#59DFCD" },
+          { color: "#3BCA78" },
+          { color: "#76F57C" },
+          { color: "#ECFF17" },
+          { color: "#0052D9" },
+          { color: "#1E847F" },
+          { color: "#40EBFF" },
+          { color: "#9270FF" }
+        ]);
+        var chart = anychart
+        .pie(data)
+        .innerRadius('55%')
+        .palette(palette);
+        chart.labels().format("{%x}:\n {%y}").fontSize(12).fontColor("#000000");
+        chart.legend(false);
+        chart
+          .selected()
+          .outline()
+          .fill(function () {
+            return anychart.color.lighten("#007247", 0.55);
+          });
+          var label = anychart.standalones.label();
+        label
+          .useHtml(true)
+          .text(
+            '<span style = "color: #000000; font-size:48px;">Всего: <br> 24.311</span>'
+          )
+          .position("center")
+          .anchor("center")
+          .hAlign("center")
+          .vAlign("middle")
+          .width("100%")
+          .height("100%");
+          chart.center().content(label)
+        chart.tooltip().format("Количество санкций: {%y}");
+        chart
+          .title()
+          .enabled(true)
+          .useHtml(true)
+          .text(
+            '<span style = "color: #000000; font-size:25px; margin-bottom:10px; dy:20px">Всего санкций против России </span>' 
+          );
+        chart.container('container');
+        chart.draw();
+        });
+    </script>
+</body>
+</html>
